@@ -1,0 +1,35 @@
+Algorithme Compter_Phrase
+
+Variables :
+    c : caractère
+    nbCar ← 0
+    nbMots ← 0
+    nbVoy ← 0
+
+Début
+
+    Lire(c)
+
+    Tant que (c ≠ '.')
+        nbCar ← nbCar + 1
+
+        Si (c = ' ')
+            nbMots ← nbMots + 1
+        FinSi
+
+        Si (c = 'a' ou c = 'e' ou c = 'i' ou c = 'o' ou c = 'u' ou
+            c = 'A' ou c = 'E' ou c = 'I' ou c = 'O' ou c = 'U')
+            nbVoy ← nbVoy + 1
+        FinSi
+
+        Lire(c)
+    FinTantQue
+
+    nbCar ← nbCar + 1
+    nbMots ← nbMots + 1
+
+    Ecrire(nbCar)
+    Ecrire(nbMots)
+    Ecrire(nbVoy)
+
+Fin
